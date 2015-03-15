@@ -4,6 +4,13 @@
 
 https://github.com/impredicative/gcam/
 
+## Contents
+- [Screenshot](#screenshot)
+- [Requirements](#requirements)
+- [Usage](#usage)
+- [Implementation](#implementation)
+- [License](#license)
+
 ## Screenshot
 <img src='http://i.imgur.com/7SgW5Xb.png' border='1' title='gcam screenshot' />
 
@@ -25,7 +32,6 @@ This should allow the user to use `sudo` to run the program. For further ease of
 ## Implementation
 The program uses the `fs_io_s` command sent to the `mmpmon` program to obtain read and write bytes counters. It then calculates deltas over successive counters—these deltas are formatted and displayed on the screen.
 
-### Limitations
 The code is not nearly as efficient as it can be. Additionally, it has some quadratic operations which may make it scale poorly. A significant rewrite is warranted to address this and other issues.
 
 `mmpmon` does not indicate when the current batch of counters has ended. The program currently learns of this by waiting until the next batch has begun. This delays the display by up to one iteration. The program can possibly be updated to use a more sophisticated approach to predict when the current batch has ended—this would reduce the display delay.
