@@ -1,10 +1,5 @@
 **gcam** ([GPFS](http://www-03.ibm.com/systems/software/gpfs/) Current Activity Monitor) uses [mmpmon](http://publib.boulder.ibm.com/infocenter/clresctr/vxrx/topic/com.ibm.cluster.gpfs321.advanceadm.doc/bl1adv_mmpmonch.html), [Python 3.2](http://www.python.org/download/releases/3.2/) and [ncurses](http://www.gnu.org/software/ncurses/) on Linux to display in a console the current GPFS read and write bytes across all currently active GPFS nodes and all GPFS file systems in a given GPFS cluster.
 
-Feedback for getting it operational in your environment is welcome and encouraged. Please file an [issue](http://code.google.com/p/gcam/issues/) as necessary.
-
-
-
-
 ## Screenshot ##
 
 <img src='http://i.imgur.com/7SgW5Xb.png' border='1' title='gcam screenshot' />
