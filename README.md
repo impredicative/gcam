@@ -5,7 +5,6 @@
 https://github.com/impredicative/gcam/
 
 ## Screenshot
-
 <img src='http://i.imgur.com/7SgW5Xb.png' border='1' title='gcam screenshot' />
 
 ## Requirements
@@ -16,7 +15,8 @@ https://github.com/impredicative/gcam/
 ## Usage
 The program can be run as `gcam` without any arguments. Run with the `-h` argument to display help and available command-line options. If the program fails to start, edit the `gcam` file. The `params.py` file in the source zip archive can be edited to change the default values of some options, although this should typically not be necessary.
 
-If the program may be run by a non-root user `foousr`, use `visudo` to consider add a line such as:
+### sudo
+If the program needs to be run by a non-root user `foousr`, use `visudo` to consider add a line such as:
 ```
 foousr   ALL=NOPASSWD:   ~/gcam/gcam
 ```
@@ -35,4 +35,4 @@ If necessary, the _refresh interval_ parameter value can be increased by the use
 At the current time, the program does not allow logging data for archival or analytic purposes, although it does allow diagnostic logging for debugging purposes.
 
 ## License
-See [license](LICENSE).
+See [license](LICENSE). For the `prettytable` module, see [src/prettytable.py](src/prettytable.py).
