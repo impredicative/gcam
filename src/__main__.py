@@ -4,8 +4,6 @@
 # Run with -h to print help and allowable arguments.
 # See params.py for more customizations.
 
-# The code for this project is generally limited to 79 characters per line.
-
 import argparse, collections, curses, datetime, functools, inspect
 import itertools, locale, logging, signal, subprocess, sys, threading, time
 
