@@ -1,6 +1,6 @@
 # gcam
 
-**gcam** ([GPFS](http://www-03.ibm.com/systems/software/gpfs/) Current Activity Monitor) uses [mmpmon](http://publib.boulder.ibm.com/infocenter/clresctr/vxrx/topic/com.ibm.cluster.gpfs321.advanceadm.doc/bl1adv_mmpmonch.html), [Python 3.2](http://www.python.org/download/releases/3.2/) and [ncurses](http://www.gnu.org/software/ncurses/) on Linux to display in a console the current GPFS read and write bytes across all currently active GPFS nodes and all GPFS file systems in a given GPFS cluster.
+**gcam** ([GPFS](http://www-03.ibm.com/systems/software/gpfs/) Current Activity Monitor) uses [mmpmon](http://publib.boulder.ibm.com/infocenter/clresctr/vxrx/topic/com.ibm.cluster.gpfs321.advanceadm.doc/bl1adv_mmpmonch.html), Python 3, and [ncurses](http://www.gnu.org/software/ncurses/) on Linux to display in a console the current GPFS read and write bytes across all currently active GPFS nodes and all GPFS file systems in a given GPFS cluster.
 
 https://github.com/impredicative/gcam/
 
@@ -16,8 +16,8 @@ https://github.com/impredicative/gcam/
 
 ## Requirements
   * Linux or similar OS. The code is tested with [CentOS](http://centos.org/) 5.7.
-  * GPFS. The code is developed with GPFS version 3.2.1-4 only. It has also been tested by users with GPFS versions 3.2.1-25 and 3.3.0. It is not know whether other versions of GPFS provide compatible mmpmon output. It is possible for the host providing mmpmon output to be different from the host running `gcam`.
-  * [Python 3.2](http://www.python.org/download/releases/3.2/) (not >3.2) with `curses` support. On CentOS, ensure that `ncurses`, `ncurses-devel`, and all other such `ncurses` packages are installed before compiling Python. To install Python, one can download its source and use the commands `./configure`, `make`, and `make altinstall`. Older or newer versions of Python will not work. Using `altinstall` will allow the installation to coexist with other versions of Python that may be installed.
+  * GPFS. The code was developed with GPFS version 3.2.1-4. It has also been tested by users with GPFS versions 3.2.1-25 and 3.3.0. It is not know whether other versions of GPFS provide compatible mmpmon output. It is possible for the host providing mmpmon output to be different from the host running `gcam`.
+  * Python 3 with `curses` support. The code was developed with Python 3.2. On CentOS, ensure that `ncurses`, `ncurses-devel`, and all other such `ncurses` packages are installed before installing Python.
 
 ## Usage
 The program can be run as `gcam` without any arguments. Run with the `-h` argument to display help and available command-line options. If the program fails to start, edit the `gcam` file. The `params.py` file in the source zip archive can be edited to change the default values of some options, although this should typically not be necessary.
