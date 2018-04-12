@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.2
+#!/usr/bin/env python3
 #
 # PrettyTable 0.5
 # Copyright (c) 2009, Luke Maurits <luke@maurits.id.au>
