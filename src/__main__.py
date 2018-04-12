@@ -1,4 +1,4 @@
-#!/usr/bin/env python3.2
+#!/usr/bin/env python3
 
 # GPFS Current Activity Monitor
 # Run with -h to print help and allowable arguments.
