@@ -1,4 +1,4 @@
-#!/usr/local/bin/python3.2
+#!/usr/local/bin/python3
 
 ## {{{ http://code.activestate.com/recipes/135435/ (r1)
 # numsort.py 
