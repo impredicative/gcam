@@ -15,8 +15,8 @@ https://github.com/impredicative/gcam/
 <img src='http://i.imgur.com/7SgW5Xb.png' border='1' title='gcam screenshot' />
 
 ## Requirements
-  * Linux or similar OS. The code is tested with [CentOS](http://centos.org/) 5.7.
-  * GPFS. The code was developed with GPFS version 3.2.1-4. It has also been tested by users with GPFS versions 3.2.1-25 and 3.3.0. It is not know whether other versions of GPFS provide compatible mmpmon output. It is possible for the host providing mmpmon output to be different from the host running `gcam`.
+  * Linux or similar OS. The code is tested with [CentOS](http://centos.org/) 5.7. It has also been tested by users with CentOS 7.
+  * GPFS. The code was developed with GPFS version 3.2.1-4. It has also been tested by users with GPFS versions 3.2.1-25, 3.3.0, and 4.2. It is not know whether other versions of GPFS provide compatible mmpmon output. It is possible for the host providing mmpmon output to be different from the host running `gcam`.
   * Python 3 with `curses` support. The code was developed with Python 3.2. On CentOS, ensure that `ncurses`, `ncurses-devel`, and all other such `ncurses` packages are installed before installing Python.
 
 ## Usage
