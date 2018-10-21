@@ -433,13 +433,14 @@ class Receiver(Logger):
         """Yield only fs_io_s records along with their group number."""
 
         # Yield records with their group number
+        count = None
         counter = itertools.count(start=1)
         for r in self._record_processor():
             if (r['type'] == 'fs_io_s' and r['properties']['rc'] == '0'):
-                r['properties']['gn'] = count #@UndefinedVariable
+                r['properties']['gn'] = count
                 yield r['properties']
             elif (r['type'] == 'nlist' and 'c' in r['properties']):
-                count = next(counter) #@UnusedVariable
+                count = next(counter)
 
     def _fsios_record_objectifier(self):
         """Yield fs_io_s record dicts as Record objects."""
