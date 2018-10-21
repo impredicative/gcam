@@ -487,7 +487,7 @@ class PrettyTable:
         bits.append("    </tr>")
         # Data
         if sortby:
-            rows = self._get_sorted_rows(stard, end, sortby, reversesort) # @UndefinedVariable
+            rows = self._get_sorted_rows(start, end, sortby, reversesort)
         else:
             rows = self.rows
         for row in self.rows:
